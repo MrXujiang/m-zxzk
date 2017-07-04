@@ -1,0 +1,156 @@
+@charset 'utf-8';
+/*css 初始化 */
+*,
+::before,
+::after{
+    -webkit-tap-highlight-color: transparent;/*清除点击默认的高亮效果*/
+    -webkit-box-sizing: border-box;/*以你的border开始计算你的宽度*/
+    box-sizing: border-box;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img,
+input,select,textarea,table,th,td { margin:0; padding:0; }
+
+html {
+  font-family: sans-serif,"Microsoft YaHei";
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+img,input { border:none;outline-style:none; }
+ul, ol { list-style:none; }
+select, input { vertical-align:middle;}   /*解决ie8执之前版本不垂直居中问题*/
+img { vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; border-spacing: 0; }
+a {color:#999; text-decoration:none; }
+a:hover{color:#f90;}
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+html input[disabled] {
+  cursor: default;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*移动端适配 width|height|font-size = 视觉稿量出来的值 / 100rem;@lbl*/
+@media screen and (max-width:359px) and (min-width:320px) {
+    html,body{
+        font-size: 50px !important;
+    }
+}
+@media screen and (max-width:374px) and (min-width:360px) {
+    html,body{
+        font-size: 56.25px !important;
+    }
+}
+@media screen and (max-width:413px) and (min-width:375px) {
+   html,body{
+        font-size: 58.5px !important;
+    }
+}
+@media screen and (max-width:639px)  and (min-width:414px){
+   html,body{
+        font-size: 64.6px !important;
+    }
+}@media screen and (min-width:640px) {
+   html,body{
+        font-size: 100px !important;
+    }
+}
+
+/* 公共类 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.txt-muted {
+    color: #ccc;
+}
+/* 限制最小宽度 */
+.layout {
+    position: relative;
+    min-width: 320px;
+}
+.width-box {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+/* header */
+.header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.h-inner {
+    padding-left: .3rem;
+    padding-right: .3rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .24rem;
+    color: #fff;
+    background-color: #033;
+    /* 解决由于固定定位使得最小宽度设置失效 */
+    min-width: 320px;
+}
+.h-inner .h-txt {
+    font-size: .3rem;
+}
+.h-inner .h-search,
+.h-inner .h-info,
+.h-inner .h-cart {
+    padding-top: .15rem;
+    float: right;
+    width: .7rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+}
+/* footer-nav */
+.footer {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+}
+.nav {
+    /* 解决由于固定定位使得最小宽度设置失效 */
+    min-width: 320px;
+    padding-top: .12rem;
+    height: .96rem;
+    background-color: #fafafa;
+    box-shadow: 0 -1px 2px #e6e6e6;
+}
+.nav-item > a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: .24rem;
+}
+.nav-item > a.active {
+    color: #f90;
+}
+.nav-item > a > [class^="icon"] {
+    display: block;
+    padding-bottom: .1rem;
+    font-size: .36rem;
+}

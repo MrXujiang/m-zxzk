@@ -1,0 +1,202 @@
+body {
+	background-color: #e6e6e6;
+}
+/* banner */
+.banner {
+	margin-top: .8rem;
+	width: 100%;
+	overflow: hidden;
+}
+.banner .banner-box {
+	width: 400%;
+}
+.banner-box > li {
+	float: left;
+	width: 25%;
+	overflow: hidden;
+}
+.banner-box > li > a > img {
+	width: 100%;
+}
+
+/* 栏目 */
+.column-box {
+	padding-top: .23rem;
+	height: 1.2rem;
+	text-align: center;
+	background-color: #fff;
+}
+.column-box > .column-item {
+    float: left;
+	width: 25%;
+	font-size: .22rem;
+}
+.column-box > .column-item > a {
+	display: inline-block;
+	color: #333;
+}
+.column-item .circle-primary,
+.column-item .circle-success,
+.column-item .circle-info,
+.column-item .circle-warning {
+	margin-bottom: .1rem;
+	display: block;
+	width: .42rem;
+	height: .42rem;
+	line-height: .42rem;
+	color: #fff;
+	border-radius: 50%;
+}
+.column-item .circle-primary {
+	background-color: #3cf;
+}
+.column-item .circle-success {
+	background-color: #903;
+}
+.column-item .circle-info {
+	background-color: #9c6;
+}
+.column-item .circle-warning {
+	background-color: #f60;
+}
+
+/* 具体内容 */
+.chat,
+.project,
+.life,
+.teacher-team {
+	margin-top: .2rem;
+    font-size: .16rem;
+}
+.con-header > .con-tit {
+	position: relative;
+	margin-bottom: .2rem;
+	font-size: .22rem;
+	font-weight: normal;
+	text-align: center;
+}
+.con-tit > .change {
+	position: absolute;
+	right: 0;
+}
+.con-item {
+	margin-bottom: 4%;
+	padding-bottom: .1rem;
+	float: left;
+	width: 48%;
+	border-radius: 6px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 1px 2px #ccc;
+}
+.con-item:nth-of-type(2n) {
+	margin-left: 4%;
+}
+.con-item > a > img {
+	width: 100%;
+}
+.con-item a > h3,
+.con-item a > p {
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.con-item a > h3 {
+	font-size: .22rem;
+	font-weight: normal;
+	color: #000;
+}
+.con-item a > p {
+	width: 90%;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	color: #ccc;
+}
+.item-footer {
+	margin-top: 10px;
+}
+.item-footer .num {
+	padding-left: 10px;
+	float: left;
+}
+.item-footer .source {
+	float: right;
+	padding-right: 10px;
+}
+/* 项目中心 */
+.project {
+	padding: 4%;
+	background-color: #fafafa;
+	box-shadow: 0 0 2px #ccc;
+}
+.con2-item {
+	margin-bottom: .3rem;
+	height: 1.8rem;
+	line-height: .3rem;
+	vertical-align: middle;
+	border-bottom: 1px solid #e6e6e6;
+}
+.con2-item:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.con2-item > a > img {
+	margin-right: .2rem;
+	width: 2rem;
+	float: left;
+}
+.con2-item > a > h3 {
+	font-weight: normal;
+	font-size: .22rem;
+}
+.con2-item .item-footer {
+	margin-top: .2rem;
+}
+.con2-item .item-footer > .num {
+	padding-left: 0;
+}
+
+/* 导师团队 */
+.teacher-team {
+	width: 100%;
+	margin-bottom: 1.2rem;
+}
+.out-box {
+	overflow: auto;
+}
+.inner-box {
+	width: 160%;
+	height: 2rem;
+	overflow: auto;
+}
+.th-list > a {
+	float: left;
+	margin-right: .2rem;
+	padding: .12rem;
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 6px;
+	text-align: center;
+	background-color: #fafafa;
+}
+.th-list > a > img {
+	margin-bottom: .1rem;
+	width: .8rem;
+	border-radius: 50%;
+}
+.th-list .th-name {
+	display: block;
+}
+
+/* 要删除的文件 */
+.move span {
+	display: block;
+	font-size: 1rem;
+	margin-bottom: .1rem;
+}
+.move {
+	margin-top: 4rem;
+	text-align: center;
+	font-size: .18rem;
+	color: gray;
+}
